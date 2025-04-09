@@ -1,10 +1,9 @@
-let firstName = 'Joe'
 
-const email = 'oi ' + firstName + ', \na reunião esta confirmada! \nGuilherme'
 
-const email2 = `oi ${firstName}, 
-a reunião esta confirmada!
-Guilherme`
+let productValue = Number(prompt('Enter the product value: '))
 
-console.log(email)
-console.log(email2)
+if(productValue >= 20) {
+    document.getElementById('result').innerHTML = 'Approved'
+}else{
+    document.getElementById('result').inner19HTML = 'Denied'
+}
