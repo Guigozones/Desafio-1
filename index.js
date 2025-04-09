@@ -1,17 +1,10 @@
+let firstName = 'Joe'
 
-function CreateBook(title, author, pages){
+const email = 'oi ' + firstName + ', \na reunião esta confirmada! \nGuilherme'
 
-    this.bookTitle = title;
-    this.bookAuthor =  author;
-    this.bookPages = pages;
-       
-    
+const email2 = `oi ${firstName}, 
+a reunião esta confirmada!
+Guilherme`
 
-}
-
-const book1 = new CreateBook('Atomic', 'James', 306)
-
-
-
-console.log(book1)
-
+console.log(email)
+console.log(email2)
