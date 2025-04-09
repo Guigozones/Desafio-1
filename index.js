@@ -1,19 +1,17 @@
 
-function createBook(title, author, pages){
-    const book = {
-        bookTitle: title, 
-        bookAuthor:  author,
-        bookPages: pages,
-        printBook: function(){
-            console.log('Printing...')
-        }
-    }
-    return book
+function CreateBook(title, author, pages){
+
+    this.bookTitle = title;
+    this.bookAuthor =  author;
+    this.bookPages = pages;
+       
+    
+
 }
 
-const book1 = createBook('Atomic', 'James', 306)
-const book2 = createBook('Think', 'Napolean', 405)
+const book1 = new CreateBook('Atomic', 'James', 306)
 
-book1.color = 'White'
+
+
 console.log(book1)
-console.log(book2)
+
